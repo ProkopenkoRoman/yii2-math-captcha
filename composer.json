@@ -1,0 +1,23 @@
+{
+	"name": "long399/yii2-math-captcha",
+	"description": "yii2 MathCaptchaAction",
+	"homepage": "https://github.com/ProkopenkoRoman/yii2-math-captcha",
+	"type": "yii2-extension",
+	"keywords": ["yii2","extension","yii2-math-captcha","captcha"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "long399",
+			"email": "long399@mail.ru"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"yiisoft/yii2": "*",
+	},
+	"autoload": {
+		"psr-4": {
+			"long399\\captcha\\": ""
+		}
+	}
+}
