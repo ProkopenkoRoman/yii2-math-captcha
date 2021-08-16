@@ -1,5 +1,8 @@
 # yii2-math-captcha
 
+[![Total Downloads](http://poser.pugx.org/long399/yii2-math-captcha/downloads)](https://packagist.org/packages/long399/yii2-math-captcha)
+[![License](http://poser.pugx.org/long399/yii2-math-captcha/license)](https://packagist.org/packages/long399/yii2-math-captcha)
+
 MathCaptchaAction for Yii Framework 2.0
 
 ![Screenshot](https://www.cyberforum.ru/blog_attachment.php?attachmentid=7084&amp;d=1629088989 "Screenshot")
