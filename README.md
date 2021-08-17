@@ -18,7 +18,7 @@ Either run
 or add
 
 ```json
-"long399/yii2-math-captcha": "dev-main"
+"long399/yii2-math-captcha": "~0.1"
 ```
 
 to the require section of your `composer.json` file.
