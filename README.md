@@ -28,7 +28,7 @@ to the require section of your `composer.json` file.
 2) Subtraction.
 3) Multiplication.
 
-Default, addition or subtraction operation will be used randomly.
+Default addition or subtraction operation will be used randomly.
 
 ## Usage
 controller:
