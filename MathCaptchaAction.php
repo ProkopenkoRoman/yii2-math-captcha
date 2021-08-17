@@ -23,7 +23,7 @@ class MathCaptchaAction extends CaptchaAction
     public $operations = ['+', '-'];
 
     /** @var array available operarations list for captcha */
-    const AVAILABLE_OPERATIONS = ['+', '-'];
+    const AVAILABLE_OPERATIONS = ['+', '-', '*'];
 
     /**
      * {@inheritDoc}
@@ -69,8 +69,22 @@ class MathCaptchaAction extends CaptchaAction
         $operation = mt_rand(0, count($this->operations) - 1);
 
         switch($this->operations[$operation]) {
-            case '+': return $code - $rand . '+' . $rand;
-            case '-': return $code + $rand . '-' . $rand;
+            case '+': return ($code - $rand).' + '.$rand;
+            case '-': return ($code + $rand).' - '.$rand;
+            case '*':
+                $sign = mt_rand(0, 1); // operation sign for subexpression
+                $whole = (int)($code / $rand);
+                switch ($sign) {
+                    case 0: // plus
+                        $reminder = $code % $rand;
+                        break;
+                    case 1: // minus
+                        $whole++;
+                        $reminder = $whole * $rand - $code;
+                }
+                $str = $whole.' * '.$rand;
+                if ($reminder) $str .= ($sign == 1 ? ' - ' : ' + ').$reminder;
+                return $str;
         }
     }
 }
