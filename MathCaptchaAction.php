@@ -34,7 +34,7 @@ class MathCaptchaAction extends CaptchaAction
         foreach($this->operations as $operation) {
             if (!in_array($operation, self::AVAILABLE_OPERATIONS)) {
                 throw new InvalidConfigException(
-                    'The `operations` config option must contain only ['.implode(', ', self::AVAILABLE_OPERATIONS).'] operations.'
+                    'The `operations` config option may contains only ['.implode(', ', self::AVAILABLE_OPERATIONS).'] operations.'
                 );
             }
         }
