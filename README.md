@@ -114,12 +114,12 @@ public function actions()
 ```
 
 Three kinds of expressions can be generated:
-1) Expression with multiplication.
-  ![Screenshot](https://www.cyberforum.ru/blog_attachment.php?attachmentid=7085&amp;d=1629172431 "Expression with multiplication")
-2) Expression with multiplication and addition.
-  ![Screenshot](https://www.cyberforum.ru/blog_attachment.php?attachmentid=7086&amp;d=1629172431 "Expression with multiplication and addition")
-3) Expression with multiplication and subtraction.
-  ![Screenshot](https://www.cyberforum.ru/blog_attachment.php?attachmentid=7087&amp;d=1629172431 "Expression with multiplication and subtraction")
+1) Expression with multiplication.  
+![Screenshot](https://www.cyberforum.ru/blog_attachment.php?attachmentid=7085&amp;d=1629172431 "Expression with multiplication")
+2) Expression with multiplication and addition.  
+![Screenshot](https://www.cyberforum.ru/blog_attachment.php?attachmentid=7086&amp;d=1629172431 "Expression with multiplication and addition")
+3) Expression with multiplication and subtraction.  
+![Screenshot](https://www.cyberforum.ru/blog_attachment.php?attachmentid=7087&amp;d=1629172431 "Expression with multiplication and subtraction")
 
 ## Author
 [long399](https://github.com/ProkopenkoRoman/), e-mail: [long399@mail.ru](mailto:long399@mail.ru)
