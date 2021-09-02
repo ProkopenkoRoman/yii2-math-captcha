@@ -31,10 +31,13 @@ class MathCaptchaAction extends CaptchaAction
      */
     public function init()
     {
+        if (!is_array($this->operations)) {
+            throw new InvalidConfigException('The "operations" property must be an array.');
+        }
         foreach($this->operations as $operation) {
             if (!in_array($operation, self::AVAILABLE_OPERATIONS)) {
                 throw new InvalidConfigException(
-                    'The `operations` config option may contains only ['.implode(', ', self::AVAILABLE_OPERATIONS).'] operations.'
+                    'The "operations" property may contains only ['.implode(', ', self::AVAILABLE_OPERATIONS).'] operations.'
                 );
             }
         }
