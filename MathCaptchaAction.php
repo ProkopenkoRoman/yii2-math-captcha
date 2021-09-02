@@ -31,6 +31,7 @@ class MathCaptchaAction extends CaptchaAction
      */
     public function init()
     {
+        parent::init();
         if (!is_array($this->operations)) {
             throw new InvalidConfigException('The "operations" property must be an array.');
         }
@@ -41,7 +42,6 @@ class MathCaptchaAction extends CaptchaAction
                 );
             }
         }
-        parent::init();
     }
 
     /**
