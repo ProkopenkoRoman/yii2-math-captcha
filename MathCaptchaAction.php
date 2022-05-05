@@ -49,7 +49,7 @@ class MathCaptchaAction extends CaptchaAction
      */
     protected function generateVerifyCode()
     {
-        return mt_rand((int)$this->minLength, (int)$this->maxLength);
+        return (string)mt_rand((int)$this->minLength, (int)$this->maxLength);
     }
 
     /**
